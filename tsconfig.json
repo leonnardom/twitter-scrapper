@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "ES2017", // Versão do JavaScript alvo
+    "module": "commonjs", // Módulo CommonJS para Node.js
+    "outDir": "./dist", // Pasta de saída para arquivos compilados
+    "rootDir": "./src", // Pasta raiz dos arquivos TypeScript
+    "strict": true, // Ativa todas as verificações estritas
+    "esModuleInterop": true, // Habilita compatibilidade com módulos ES
+    "skipLibCheck": true // Pula checagem de arquivos de declaração
+  },
+  "include": ["src/**/*"], // Inclui todos os arquivos TypeScript na pasta src
+  "exclude": ["node_modules"] // Exclui a pasta node_modules
+}
