@@ -77,6 +77,7 @@ Send a POST request to the `/scrape` endpoint with a JSON body containing the Tw
       "totalRetweets": 50,
       "totalReplies": 10
     }
+```
 
 The response will include the total counts of likes, retweets, and replies for the specified Twitter profile, along with detailed information about each tweet, including media links (images/videos).
 
@@ -89,4 +90,3 @@ License
 -------
 
 This project is licensed under the [MIT License](LICENSE).
-```
