@@ -1,27 +1,23 @@
-Twitter Profile Scraper
-=======================
+# Twitter Profile Scraper
 
 This project is a scraper for Twitter profiles, developed with Node.js and TypeScript, using Puppeteer for browser automation. The scraper collects information about tweets and interactions from Twitter profiles.
 
-Features
---------
+## Features
 
-*   **Profile Information Collection:** Retrieves the total counts of likes, retweets, and replies for a Twitter profile.
-*   **Tweet Details:** Extracts information about posted tweets, including likes, retweets, replies, content, and media links (images/videos).
-*   **Simulated Interaction:** Simulates user interaction with the page to avoid bot detection.
-*   **Captcha Handling:** Uses the reCAPTCHA plugin to handle captchas automatically.
+- **Profile Information Collection:** Retrieves the total counts of likes, retweets, and replies for a Twitter profile.
+- **Tweet Details:** Extracts information about posted tweets, including likes, retweets, replies, content, and media links (images/videos).
+- **Simulated Interaction:** Simulates user interaction with the page to avoid bot detection.
+- **Captcha Handling:** Uses the reCAPTCHA plugin to handle captchas automatically.
 
-Requirements
-------------
+## Requirements
 
-*   Node.js (v14 or higher)
-*   TypeScript
-*   `ts-node` (for running TypeScript code directly)
-*   `puppeteer-extra`, `puppeteer`, `puppeteer-extra-plugin-stealth`, and `puppeteer-extra-plugin-recaptcha` (for browser automation and captcha handling)
-*   `PORT` environment variable (optional)
+- Node.js (v14 or higher)
+- TypeScript
+- `ts-node` (for running TypeScript code directly)
+- `puppeteer-extra`, `puppeteer`, `puppeteer-extra-plugin-stealth`, and `puppeteer-extra-plugin-recaptcha` (for browser automation and captcha handling)
+- `PORT` environment variable (optional)
 
-Installation
-------------
+## Installation
 
 Clone the repository and install the dependencies:
 
@@ -29,8 +25,7 @@ Clone the repository and install the dependencies:
     cd twitter-scraper
     npm install
 
-Running the Project
--------------------
+## Running the Project
 
 To run the project directly in TypeScript, use the following command:
 
@@ -40,14 +35,12 @@ For a development environment with automatic reloading, install `ts-node-dev` an
 
     npm run dev
 
-Available Scripts
------------------
+## Available Scripts
 
-*   `start`: Runs the TypeScript code using `ts-node`.
-*   `dev`: Runs the TypeScript code with `ts-node-dev` for development.
+- `start`: Runs the TypeScript code using `ts-node`.
+- `dev`: Runs the TypeScript code with `ts-node-dev` for development.
 
-API Usage
----------
+## API Usage
 
 Send a POST request to the `/scrape` endpoint with a JSON body containing the Twitter profile username you want to collect information from:
 
@@ -59,7 +52,7 @@ Send a POST request to the `/scrape` endpoint with a JSON body containing the Tw
 
     POST http://localhost:3000/scrape
     Content-Type: application/json
-    
+
     {
       "username": "username"
     }
@@ -67,6 +60,7 @@ Send a POST request to the `/scrape` endpoint with a JSON body containing the Tw
 ### Example Response
 
 ```json
+
     {
       "success": true,
       "data": [
@@ -83,7 +77,6 @@ Send a POST request to the `/scrape` endpoint with a JSON body containing the Tw
       "totalRetweets": 50,
       "totalReplies": 10
     }
-```
 
 The response will include the total counts of likes, retweets, and replies for the specified Twitter profile, along with detailed information about each tweet, including media links (images/videos).
 
@@ -96,3 +89,4 @@ License
 -------
 
 This project is licensed under the [MIT License](LICENSE).
+```
